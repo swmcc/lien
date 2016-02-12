@@ -1,4 +1,4 @@
-# lien - 
+# lien
 
 **lien**  */liːn,ˈliːən/*
 
@@ -23,13 +23,36 @@ has proven to be very difficult.
 I used to use [del.icio.us](delicious.com) but that got sold to
 [yahoo](Yahoo) - enough said. [Google Bookmarks](https://www.google.co.uk/bookmarks/)
 doesn't suit me as I can be on different accounts (work, personal). So instead
-of subscribing to a third party and have them either 'sunset' the app after a few years
-I have decided to write my own.
+of subscribing to a third party and have them either mess the app or 'sunset' it
+I decided to write my own.
 
-## Disclaimer
+## Links
 
-This app is only meant for me. It doesn't do multi user. PR's are welcome if you 
-want to change this.
+- [Production](http://lien.swm.cc)
+- [Development](http://localhost:3000)
 
 ## Development Info
 
+```
+git clone git@github.com:swmcc/lien.git 
+cd lien
+bundle install
+rails s # http://localhost:3000
+```
+
+## Testing
+
+I have included the ```guard-rspec``` gem to aid a fast feedback loop. 
+
+```
+rspec
+```
+
+## Deploying
+
+Lives on [heroku](http://www.heroku.com). Deployed via 
+[CodeShip](http://www.codeship.com).
+
+```
+git push origin master
+```

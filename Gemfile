@@ -24,6 +24,7 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'rspec'
   gem 'rspec-rails'
+  gem 'pry'
 end
 
 group :production do

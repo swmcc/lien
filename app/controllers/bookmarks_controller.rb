@@ -4,7 +4,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = Bookmark.all.order('id DESC')
+    @bookmarks = Bookmark.paginate(:page => params[:page])
   end
 
   # GET /bookmarks/1

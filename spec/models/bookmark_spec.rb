@@ -16,7 +16,7 @@ RSpec.describe Bookmark, type: :model do
       let(:title) { Faker::Lorem.sentence(2) }
       let(:url) { Faker::Internet.url }
       let(:bookmark) { Bookmark.create(title: title, url: url, private: true) }
-      
+
       it { expect(bookmark.title).to eql title }
       it { expect(bookmark.url).to eql url }
       it { expect(bookmark.private?).to be true }

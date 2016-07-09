@@ -37,7 +37,7 @@ I decided to write my own.
 git clone git@github.com:swmcc/lien.git 
 cd lien
 bundle install
-rails s # http://localhost:3000
+make run
 ```
 
 ## Testing
@@ -45,7 +45,7 @@ rails s # http://localhost:3000
 I have included the ```guard-rspec``` gem to aid a fast feedback loop. 
 
 ```
-rspec
+make test
 ```
 
 ## Deploying
